@@ -85,28 +85,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* --- 5. Form Submission Simulation --- */
-  const form = document.getElementById('notify-form');
-  const emailInput = document.getElementById('email');
-  const submitBtn = document.getElementById('submit-btn');
-  const btnText = document.querySelector('.btn-text-submit');
-  const spinner = document.querySelector('.spinner');
-  const successMsg = document.getElementById('success-msg');
+ 
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if (!emailInput.value) return;
+/* --- 5. Submit Form --- */
 
-    emailInput.disabled = true;
+const form = document.getElementById("notify-form");
+const successMsg = document.getElementById("success-msg");
+const submitBtn = document.getElementById("submit-btn");
+const btnText = document.querySelector(".btn-text-submit");
+
+form.addEventListener("submit", () => {
+
     submitBtn.disabled = true;
-    btnText.classList.add('hidden');
-    spinner.classList.remove('hidden');
+
+    btnText.textContent = "Submitting...";
 
     setTimeout(() => {
-      spinner.classList.add('hidden');
-      btnText.classList.remove('hidden');
-      btnText.textContent = "Added";
-      successMsg.classList.remove('hidden');
+
+        successMsg.classList.remove("hidden");
+
+        btnText.textContent = "Reserved ✓";
+
+        form.reset();
+
+        submitBtn.disabled = false;
+
     }, 1500);
-  });
+
+
+
+});
 });
