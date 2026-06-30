@@ -45,11 +45,23 @@
       
       <!-- Left Column: Hero -->
       <section class="hero-section">
-        <h1 class="reveal stagger-2">
-          Something<br>
-          <span class="text-gradient">Extraordinary</span><br>
-          is Coming
-        </h1>
+       <h1 class="hero-title reveal stagger-2">
+
+    <span class="hero-line">
+        Your Business Deserves
+    </span>
+
+    <span class="hero-gradient reveal-text">
+        A Powerful Digital Presence
+    </span>
+
+</h1>
+
+<p class="hero-launch">
+    Launching Soon
+</p>
+
+</h1>
         <p class="subtitle reveal stagger-3">
           Your complete digital growth partner is launching soon. We help businesses grow with modern websites, digital marketing, creative design, and social media management—all under one roof
         </p>
@@ -58,7 +70,7 @@
             <span class="btn-bg"></span>
             <span class="btn-text">Get Early Access</span>
           </a>
-          <a href="#about" class="btn-link hover-target">📞 Contact Us</a>
+          <a href="#subscribe" class="btn-link hover-target">📞 Contact Us</a>
         </div>
       </section>
 
@@ -110,27 +122,70 @@
         </div>
 
         <!-- High-Conversion Callback Request Form Panel -->
-        <div id="subscribe" class="glass-card subscribe-card reveal stagger-5">
-          <div class="subscribe-header">
-            <h3>Get a Free Launch Consultation</h3>
-            <p>Register today and receive a personal call from our team when we launch. Early supporters get exclusive launch benefits.</p>
-          </div>
-          <form id="notify-form" class="subscribe-form flex-col">
-            <input type="text" id="username" required placeholder="Your Name" class="glass-input hover-target">
-            <input type="tel" id="phone" required placeholder="Your Mobile Number" class="glass-input hover-target">
-            <button type="submit" id="submit-btn" class="btn-submit hover-target">
-              <span class="btn-text-submit">Reserve My Spot</span>
-              <svg class="spinner hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
-            </button>
-          </form>
-          <div id="success-msg" class="success-msg hidden">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <span>🎉 Thanks for joining! Our team will reach out with exclusive launch offers<br>🔒 We respect your privacy. No spam, ever.</span>
-          </div>
-        </div>
+<div id="subscribe" class="glass-card subscribe-card reveal stagger-5">
+  <div class="subscribe-header">
+    <h3>Get a Free Launch Consultation</h3>
+    <p>
+      Register today and receive a personal call from our team when we launch.
+      Early supporters get exclusive launch benefits.
+    </p>
+  </div>
 
-      </section>
-    </div>
+  <form
+    id="notify-form"
+    class="subscribe-form flex-col"
+    action="https://script.google.com/macros/s/AKfycbzcSHz4iDIIkbmV_hWlrgDIP_Ocjl_0n7Avhwb-S1mRgpFCk7FHG8YQoOiRlO_W2_Yk/exec"
+    method="POST"
+    target="hidden_iframe">
+
+    <input
+      type="text"
+      id="username"
+      name="name"
+      required
+      placeholder="Your Name"
+      class="glass-input hover-target">
+
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      required
+      placeholder="Your Mobile Number"
+      class="glass-input hover-target">
+
+    <button
+      type="submit"
+      id="submit-btn"
+      class="btn-submit hover-target">
+
+      <span class="btn-text-submit">
+        Reserve My Spot
+      </span>
+
+      <svg class="spinner hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
+      </svg>
+
+    </button>
+
+  </form>
+
+  <!-- Hidden iframe -->
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  <div id="success-msg" class="success-msg hidden">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+      <polyline points="22 4 12 14.01 9 11.01"/>
+    </svg>
+
+    <span>
+      🎉 Thanks for joining! Our team will reach out with exclusive launch offers.
+    </span>
+  </div>
+</div>
+</div>
 
     <!-- Footer -->
     <footer class="footer reveal stagger-6">
@@ -141,7 +196,7 @@
       </div>
       <div class="socials">
         <!-- Instagram Link -->
-        <a href="https://instagram.com/yourusername" target="_blank" class="social-icon magnetic hover-target" aria-label="Instagram">
+        <a href="https://www.instagram.com/tech__nova__innovations/" target="_blank" class="social-icon magnetic hover-target" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -150,7 +205,7 @@
         </a>
         
         <!-- Email Link -->
-        <a href="mailto:contact@yourdomain.com" class="social-icon magnetic hover-target" aria-label="Email">
+        <a href="mailto:support@technovainnovations.in" class="social-icon magnetic hover-target" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
@@ -158,11 +213,25 @@
         </a>
         
         <!-- Phone Link -->
-        <a href="tel:+1234567890" class="social-icon magnetic hover-target" aria-label="Phone Number">
+        <a href="tel:+919347163461" class="social-icon magnetic hover-target" aria-label="Phone Number">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
           </svg>
         </a>
+
+          <!-- WhatsApp Link -->
+      <a href="https://wa.me/919347163461?text=Hi%20TechNova,%20I'm%20interested%20in%20your%20services."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-icon magnetic hover-target"
+        aria-label="WhatsApp">
+
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.52 3.48A11.82 11.82 0 0 0 12.03 0C5.4 0 .02 5.38.02 12c0 2.12.55 4.2 1.6 6.04L0 24l6.13-1.6A11.95 11.95 0 0 0 12.03 24C18.66 24 24 18.62 24 12c0-3.2-1.25-6.2-3.48-8.52zM12.03 21.8c-1.84 0-3.64-.49-5.21-1.42l-.37-.22-3.64.95.97-3.55-.24-.37A9.77 9.77 0 0 1 2.22 12c0-5.41 4.4-9.81 9.81-9.81 2.62 0 5.08 1.02 6.93 2.88A9.72 9.72 0 0 1 21.81 12c0 5.41-4.4 9.8-9.78 9.8zm5.39-7.34c-.29-.15-1.71-.84-1.98-.93-.26-.1-.46-.15-.65.15-.19.29-.75.93-.92 1.12-.17.2-.34.22-.63.08-.29-.15-1.24-.46-2.36-1.47-.88-.78-1.47-1.74-1.64-2.03-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.65-1.56-.89-2.14-.23-.55-.47-.47-.65-.48h-.55c-.2 0-.52.08-.79.37-.27.29-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.11 4.52.71.31 1.27.5 1.7.64.71.23 1.36.2 1.87.12.57-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.08-.12-.27-.2-.56-.35z"/>
+        </svg>
+
+      </a>
+  
       </div>
     </footer>
   </main>
